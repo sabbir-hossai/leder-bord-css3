@@ -1,5 +1,5 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body{
     background-color: #9f9f9f;
@@ -7,21 +7,23 @@ body{
 }
 /* top-players and top blog start */
 main{
-    display: flex;
-    justify-content: center;
-    margin: 33px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    } 
 .top-players{
-    margin: 33px;
+    margin:20px;
     margin-bottom: 30px;
 }
-.main-section-tittle{
+.section-tittle{
     color: #562EFF;
+    margin-left: 30px;
 }
 .container{
     width: 870px;
     background-color: #ffffff;
-
+    margin-bottom: 30px;
 }
 
 .players{
@@ -45,5 +47,123 @@ main{
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
 }
 /* top-players and top blog end */
+
+
+
+/*------------ top blog style sheet ----- start */
+.top-blog{
+   
+    
+}
+.articales{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    margin-left:30px ;
+}
+.blogs{
+display: flex;
+
+}
+.thumbnail img{
+    width: 224px;
+    height: 127px;
+    border-radius: 10px;
+    padding:;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-info> p > a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
+}
+
+/*------------ top blog style sheet ----- end */
+
+
+
+/* Latest course section start */
+.courses{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+    margin: 25px;
+}
+.course{
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+}
+
+.course-banner>img{
+    width: 266px;
+    height: 141px;
+}
+.course-detail > h3{
+    font-size: 20px;
+}
+.course-detail > p{
+    font-size: 14px;
+     
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rate{
+    display: flex;
+    align-items: center;
+    
+    
+     
+}
+.rate >.star-color{
+    color: #FFC014;
+     
+ }
+.rate >.star-eamty{
+   color: #AEAEAE;
+}
+.fas{
+    margin-right: 10px;
+}
+.course-duration{
+    border: 1px solid crimson;
+    border-radius: 10px;
+    text-align: right;
+    color: #FF4A60;
+    background-color:#FFE4E8;
+}
+
+/* Latest course section end */
+
+
+
+ /* -----------------------
+      fully rasponsive 
+    --------------------- */
+
+    /* for mobile device */
+
+    @media only screen and (max-width:767px) {
+        .container{
+            width:100%;
+        }
+        .players, .articales,.courses{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            
+        }
+        .player{
+            flex-direction: column;
+        }
+        .blogs{
+            display:block;
+        }
+         
+    }
+    
